@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Send+Flowers&display=swap');
+
+
+.currentNavigation {
+    text-decoration: underline;
+    font-weight: 800;
+    color: #787575;
+}
+
+.currentNavigation:hover {
+    color: #b0acac;
+}
+
+.navElements {
+    color: black;
+}
+
+.navElements:hover {
+    color: #787575;
+}
+
+.brandTitle {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Send Flowers', cursive;
+    font-size: 30px;
+}
+
+.navbar {
+    box-shadow: 0px 3px 5px #888888;
+}
