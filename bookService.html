@@ -7,14 +7,31 @@
     <link href="/css/main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <nav class="navbar" style="background-color: #d5dae3;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #d5dae3;"">
       <div class="container-fluid">
-        <a class="navbar-brand mb-0 h1 brandTitle" href="index.html">Modern Trims</a>
-        <a class="navbar-brand navElements" href="index.html">Home</a>
-        <a class="navbar-brand currentNavigation" href="bookService.html">Book Online</a>
-        <a class="navbar-brand navElements" href="services.html">Services</a>
-        <a class="navbar-brand navElements" href="aboutUs.html">About Us</a>
-        <a class="navbar-brand navElements" href="contactUs.html">Contact Us</a>
+        <a class="navbar-brand brandTitle" href="index.html">Modern Trims</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active currentNavigation" aria-current="page" href="bookService.html">Book Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </head>
