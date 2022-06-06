@@ -6,6 +6,7 @@
     <title>Services Page</title>
     <link href="/css/main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/services.css">
 
     <nav class="navbar navbar-expand-lg" style="background-color: #d5dae3;"">
       <div class="container-fluid">
@@ -38,9 +39,39 @@
 
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js\services.js"></script>
     <div class="centerInformation">
+      <br><br><br>
       <h1 class="title">Services</h1>
-      <p>Test</p>
+      <p class="description">Modern Trims offers a wide variety of services! You can view all of our services and their costs below!<br>Prices may vary during the service dependent on the condition of your hair.</p>
+
+      <div class="grid">
+
+        <div>
+          <br><br>
+          <select class="form-select" name="services" id="services" onchange="update()">
+            <option value="">Services</option>
+            <option value="haircut">Haircut</option>
+            <option value="fade">Fade</option>
+            <option value="wash">Hair Wash with Hair Cut</option>
+            <option value="shape">Shaping/Trimming</option>
+            <option value="beard">Beard Outline</option>
+            <option value="mini">Mini Highlights</option>
+            <option value="partial">Partial Highlights</option>
+            <option value="full">Full Hair Color</option>
+            <option value="ombre">Ombre</option>
+            <option value="correction">Color Correction</option>
+            <option value="surprise">Surprise Me!</option>
+          </select>
+        </div>
+
+        <div>
+          <br><br>
+          <h2 id="serviceName">Services</h2>
+          <p id="serviceDescription">Select a service to see its information</p>
+        </div>
+      </div>
+
     </div>
 
   </body>

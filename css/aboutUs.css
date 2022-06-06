@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cardSpacing {
+    padding: 20px;
+}
+
+.cardTitle {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Send Flowers', cursive;
+    font-size: 50px;
+}
+
+.social {
+    display: inline-block;
+}

@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home Page</title>
+    <title>Confirmation Page</title>
     <link href="/css/main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css\home.css">
+    <link rel="stylesheet" href="css\confirmation.css">
 
     <nav class="navbar navbar-expand-lg" style="background-color: #d5dae3;">
       <div class="container-fluid">
@@ -17,10 +17,10 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active currentNavigation" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="bookService.html">Book Online</a>
+              <a class="nav-link active currentNavigation" aria-current="page" href="bookService.html">Book Online</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
@@ -40,14 +40,20 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <div class="center">
-      <h4>Welcome to</h4>
-      <h1 class="brandTitleHeader">Modern Trims</h1>
-      <p>A hair salon with all of your needs!</p>
-      <a href="bookService.html">
-        <button type="button" onclick="book" class="btn btn-primary position-relative">
-          Book an Appointment
-        </button>
-      </a>
+      <h1 class="successMessage">Success!</h1>
+      <p>Your appointment has been successfully booked!<br/>Return back to the home page or book another appointment!</p>
+      <div class="inline">
+        <a class="inline" href="index.html">
+            <button type="button" onclick="book" class="btn btn-primary position-relative">
+            Back to Home Page
+            </button>
+        </a>
+        <a class="inline" href="bookService.html">
+            <button type="button" onclick="book" class="btn btn-primary position-relative">
+            Book an Appointment
+            </button>
+        </a>
+      </div>
     </div>
 
   </body>

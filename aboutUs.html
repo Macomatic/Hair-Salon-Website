@@ -6,6 +6,7 @@
     <title>About Us Page</title>
     <link href="/css/main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
 
     <nav class="navbar navbar-expand-lg" style="background-color: #d5dae3;"">
       <div class="container-fluid">
@@ -39,8 +40,71 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <div class="centerInformation">
+      <br><br><br>
       <h1 class="title">About Us</h1>
-      <p>Test</p>
+      <p class="description">Modern Trims was established in 2011 as a side business by a single person.<br/> 
+        In 2022, we now have 2 stylists, hundreds of clients, and a wide variety of services that will meet all of your needs!<br/>
+        Our stylists are experienced and guaranteed to provide excellent service all the time!
+        You can see all of our stylists below.</p>
+        <div class="grid">
+
+          <div class="cardSpacing">
+            <div class="card">
+              <img class="card-img-top" src="assets\stylist1.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title cardTitle">Tim Slaine</h5>
+                <p class="card-text">Owner/Founder, Head stylist, 10+ years experience</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Men's Haircuts and Beard</li>
+                <li class="list-group-item">Fade/Perm</li>
+                <li class="list-group-item">Shaping/Trimming</li>
+              </ul>
+              <div class="card-body">
+                <a class="social" target=”_blank” href="https://www.instagram.com/?hl=en">
+                  <img src="assets/instagramIcon.png" alt="" width="32" height="32">
+                </a>
+                <a class="social" target=”_blank” href="https://twitter.com/home">
+                  <img src="assets/twitterIcon.png" alt="" width="32" height="32">
+                </a><br><br>
+                <a href="bookService.html">
+                  <button type="button" onclick="book" class="btn btn-primary position-relative">
+                    Book an Appointment with this stylist
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="cardSpacing">
+            <div class="card">
+              <img class="card-img-top" src="assets\stylist2.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title cardTitle">Maria Dane</h5>
+                <p class="card-text">Stylist, 5+ years experience</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Women's Haircut</li>
+                <li class="list-group-item">Color correction/Highlights</li>
+                <li class="list-group-item">Hair styling</li>
+              </ul>
+              <div class="card-body">
+                <a class="social" target=”_blank” href="https://www.instagram.com/?hl=en">
+                  <img src="assets/instagramIcon.png" alt="" width="32" height="32">
+                </a>
+                <a class="social" target=”_blank” href="https://twitter.com/home">
+                  <img src="assets/twitterIcon.png" alt="" width="32" height="32">
+                </a><br><br>
+                <a href="bookService.html">
+                  <button type="button" onclick="book" class="btn btn-primary position-relative">
+                    Book an Appointment with this stylist
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
     </div>
 
   </body>
