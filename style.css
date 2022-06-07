@@ -54,3 +54,8 @@ a, p {
     font-size: 18px;
     font-weight: bold; 
 }
+
+nav {
+    font-weight: bold;
+    font-size: 20px;
+}

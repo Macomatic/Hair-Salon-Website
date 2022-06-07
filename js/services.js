@@ -19,3 +19,7 @@ function update() {
     document.getElementById('serviceName').innerHTML = serviceFullName;
     document.getElementById('serviceDescription').innerHTML = serviceDescriptions[index];
 }
+
+function onLoad() {
+    localStorage.clear();
+}

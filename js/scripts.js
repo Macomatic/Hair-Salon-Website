@@ -1,0 +1,3 @@
+function onLoad() {
+    localStorage.clear();
+}

@@ -28,3 +28,11 @@ function submit() {
 
 
 }
+
+function onLoad() {
+    let stylist = localStorage.getItem("stylist");
+    if (stylist != null) {
+        stylistDropdown = document.getElementById("stylists");
+        stylistDropdown.value = stylist;
+    }
+}

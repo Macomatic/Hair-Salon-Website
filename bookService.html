@@ -6,6 +6,7 @@
     <title>Book Service Page</title>
     <link href="/css/main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\bookService.css">
 
     <nav class="navbar navbar-expand-lg" style="background-color: #d5dae3;">
       <div class="container-fluid">
@@ -36,30 +37,35 @@
     </nav>
   </head>
 
-  <body>
+  <body onload="onLoad()">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="js\bookServices.js"></script>
     <div class="centerInformation">
       <br><br><br>
       <h1 class="title">Book an Appointment</h1>
       <p class="description">Fill out the following information to book an appointment!</p>
+      <br>
       <form action="">
         <div>
+          <label for="fullname" class="label">Name:</label>
           <div class="input-group mb-3">
             <input type="text" id="fullname" class="form-control" placeholder="Full Name" aria-label="Fullname" aria-describedby="basic-addon1">
           </div>
-
+          <br>
+          <label for="email" class="label">Email:</label>
           <div class="input-group mb-3">
             <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Username">
             <span class="input-group-text">@</span>
             <input type="text" class="form-control" id="domain" placeholder="Domain" aria-label="Domain">
           </div>
-
+          <br>
+          <label for="startDate" class="label">Date and Time:</label>
           <div class="input-group mb-3">
             <input id="startDate" class="form-control" type="date" onkeydown="return false"/>
             <input type="time" id="appt" name="appt">
           </div>
-
+          <br>
+          <label for="stylists" class="label">Stylist:</label>
           <div class="input-group mb-3">
             <select class="form-select" name="stylists" id="stylists" placeholder="Stylist">
               <option value="" disabled selected>Select a stylist</option>
@@ -67,7 +73,8 @@
               <option value="mdane">Maria Dane</option>
             </select>
           </div>
-
+          <br>
+          <label for="services" class="label">Service:</label>
           <div class="input-group mb-3">
             <select class="form-select" name="services" id="services">
               <option value="" disabled selected>Services</option>
@@ -87,10 +94,8 @@
           
         </div>
     </form>
-
-    <button type="button" onclick="submit()" class="btn btn-success position-relative submitbutton">
-      Submit
-    </button>
+    <br>
+    <button type="button" onclick="submit()" class="btn btn-primary position-relative submitbutton">Submit</button>
 
     </div>
     
